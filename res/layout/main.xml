@@ -34,10 +34,11 @@
 
     <Button
         android:id="@+id/button3"
+        style="@style/TextoAsteroides.Botones"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/mainmenu_about" 
-        style="@style/TextoAsteroides.Botones"/>
+        android:onClick="lanzarAcercaDe"
+        android:text="@string/mainmenu_about" />
 
     <Button
         android:id="@+id/button4"
