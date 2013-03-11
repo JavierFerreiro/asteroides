@@ -42,9 +42,10 @@
 
     <Button
         android:id="@+id/button4"
+        style="@style/TextoAsteroides.Botones"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/mainmenu_exit" 
-        style="@style/TextoAsteroides.Botones"/>
+        android:onClick="lanzarSalir"
+        android:text="@string/mainmenu_exit" />
 
   </LinearLayout>

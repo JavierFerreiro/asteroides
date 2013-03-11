@@ -25,7 +25,7 @@ public class Asteroides extends Activity {
         	}
   
         });
-        
+        /*Comentamos este trozo para hacerlo por xml
         //Listeners "Salir"
         bSalir=(Button) findViewById(R.id.button4);
         bSalir.setOnClickListener(new OnClickListener(){
@@ -33,6 +33,7 @@ public class Asteroides extends Activity {
         		lanzarSalir();
         	}
         });
+        */
     }
 
     @Override
@@ -47,7 +48,7 @@ public class Asteroides extends Activity {
     	startActivity(i);
     }
     
-    public void lanzarSalir(){
+    public void lanzarSalir(View view){
     	finish();
     }
     
