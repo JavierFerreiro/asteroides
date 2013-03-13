@@ -46,16 +46,6 @@ public class Asteroides extends Activity {
         return true;
     }
     
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-    	switch(item.getItemId() ){
-    	case R.id.acercaDe:
-    		lanzarAcercaDe(null);
-    		break;
-    	}
-    	return true;
-    }
-    
     public void lanzarAcercaDe(View view){
     	Intent i = new Intent(this, AcercaDe.class);
     	startActivity(i);
@@ -65,8 +55,22 @@ public class Asteroides extends Activity {
     	finish();
     }
     
- 
-   
+    public void lanzarPreferencias(View view){
+    	Intent i=new Intent(this,Preferencias.class);
+    	startActivity(i);
+    }
     
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+    	switch(item.getItemId() ){
+    	case R.id.acercaDe:
+    		lanzarAcercaDe(null);
+    		break;
+    	case R.id.config:
+    		lanzarPreferencias(null);
+    		break;
+    	}
+    	return true;
+    }	
     
 }

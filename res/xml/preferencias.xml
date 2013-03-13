@@ -9,33 +9,25 @@
   <CheckBoxPreference
 
     android:key="musica"
-
     android:title="Reproducir música"
-
     android:summary="Se reproduce música de fondo"/>
 
   <ListPreference
 
     android:key="graficos"
-
     android:title="Tipo de gráficos"
-
     android:summary="Se escoge la representación de gráficos"
-
     android:entries="@array/tiposGraficos"
-
     android:entryValues="@array/tiposGraficosValores"
-
     android:defaultValue="1"/>
 
+<!--to avoid things like trozos="a" put unputType="number"-->
   <EditTextPreference
-
     android:key="fragmentos"
-
     android:title="Número de Fragmentos"
-
     android:summary="En cuantos trozos se divide un asteroide"
-
-    android:defaultValue="3"/>
+    android:defaultValue="3"
+    android:inputType="number" 
+    />
 
 </PreferenceScreen>
