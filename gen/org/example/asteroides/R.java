@@ -31,6 +31,7 @@ public final class R {
     public static final class layout {
         public static final int acercade=0x7f030000;
         public static final int main=0x7f030001;
+        public static final int puntuaciones=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -42,10 +43,12 @@ public final class R {
         public static final int hello_world=0x7f060002;
         public static final int mainmenu_about=0x7f060008;
         public static final int mainmenu_configure=0x7f060005;
-        public static final int mainmenu_exit=0x7f060007;
         public static final int mainmenu_playbutton=0x7f060003;
+        public static final int mainmenu_puntuaciones=0x7f060007;
         public static final int mainmenu_title=0x7f060004;
         public static final int menu_settings=0x7f060001;
+        public static final int puntuaciones_title=0x7f060009;
+        public static final int puntuaciones_vacio=0x7f06000a;
     }
     public static final class style {
         /** 

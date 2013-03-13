@@ -33,6 +33,10 @@
             android:label="Preferencias"
             android:theme="@android:style/Theme.Black">
         </activity>
+        <activity android:name=".Puntuaciones"
+            android:label="Puntuaciones"
+            android:theme="@android:style/Theme.Black">
+        </activity>
     </application>
 
 </manifest>

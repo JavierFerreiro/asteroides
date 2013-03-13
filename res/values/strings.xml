@@ -8,7 +8,9 @@
     <string name="mainmenu_title">Asteroides</string>
     <string name="mainmenu_configure">Configurar</string>
     <string name="about">Acerca De</string>
-    <string name="mainmenu_exit">Salir</string>
+    <string name="mainmenu_puntuaciones">Puntuaciones</string>
     <string name="mainmenu_about">Acerca De</string>
+    <string name="puntuaciones_title">Puntuaciones</string>
+    <string name="puntuaciones_vacio">No Hay Puntuaciones</string>
 
 </resources>

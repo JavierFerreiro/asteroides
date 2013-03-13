@@ -13,6 +13,7 @@ import android.widget.Button;
 public class Asteroides extends Activity {
 	private Button bAcercaDe;
 	private Button bSalir;
+	public static AlmacenPuntuaciones almacen=new AlmacenPuntuacionesArray();
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,11 @@ public class Asteroides extends Activity {
     
     public void lanzarPreferencias(View view){
     	Intent i=new Intent(this,Preferencias.class);
+    	startActivity(i);
+    }
+    
+    public void lanzarPuntuaciones(View view){
+    	Intent i =new Intent(this,Puntuaciones.class);
     	startActivity(i);
     }
     
