@@ -8,10 +8,14 @@ public class Puntuaciones extends ListActivity{
 	@Override public void onCreate(Bundle saveInstanceState){
 		super.onCreate(saveInstanceState);
 		setContentView(R.layout.puntuaciones);
-		setListAdapter(new ArrayAdapter<String>(this
+		
+		setListAdapter(new MiAdaptador(this,Asteroides.almacen.listaPuntuaciones(10)));
+	// de la primera práctica
+		/*setListAdapter(new ArrayAdapter<String>(this
 												,R.layout.elemento_lista
 												,R.id.titulo
 												,Asteroides.almacen.listaPuntuaciones(10)) 
 												);
+       */
 	}
 }
