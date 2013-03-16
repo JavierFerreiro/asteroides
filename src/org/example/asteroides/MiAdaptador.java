@@ -20,6 +20,7 @@ public class MiAdaptador extends BaseAdapter {
 		this.lista=lista;
 	}
 	
+	
 	public View getView(int position, View convertView,ViewGroup parent){
 		LayoutInflater inflater = actividad.getLayoutInflater();
 		View view = inflater.inflate(R.layout.elemento_lista,null,true);

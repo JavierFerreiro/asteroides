@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Asteroids</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="mainmenu_playbutton">Play</string>
+    <string name="mainmenu_title">Asteroids</string>
+    <string name="mainmenu_configure">Configure</string>
+    <string name="mainmenu_puntuaciones">Score</string>
+    <string name="mainmenu_acerca">About</string>
+    <string name="mainmenu_menu_configuracion">Configure</string>
+    <string name="mainmenu_menu_acercade">About</string>
+    
+    <string name="puntuaciones_title">Score</string>
+    <string name="puntuaciones_vacio">No score available</string>
+    <string name="puntuaciones_texto"> This application was developed like example of the course of android, to demostrate how is possible launch new activities from de main activity.</string>
+    
+    
+    <string name="relleno">Foo Bar Lore Ipsilum.</string>
+
+</resources>

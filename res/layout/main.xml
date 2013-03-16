@@ -39,7 +39,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:onClick="lanzarAcercaDe"
-        android:text="@string/mainmenu_about" />
+        android:text="@string/mainmenu_acerca" />
 
     <Button
         android:id="@+id/button4"

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:id="@+id/config" 
-        	android:title="Configuración" 
+        	android:title="@string/mainmenu_menu_configuracion" 
         	android:icon="@android:drawable/ic_menu_preferences">
         
     </item>
     <item android:id="@+id/acercaDe" 
-        	android:title="Acerca De..." 
+        	android:title="@string/mainmenu_menu_configuracion" 
         	android:icon="@android:drawable/ic_menu_info_details">
 
     </item>

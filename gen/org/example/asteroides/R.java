@@ -45,17 +45,20 @@ public final class R {
         public static final int menu=0x7f080001;
     }
     public static final class string {
-        public static final int about=0x7f060006;
         public static final int app_name=0x7f060000;
         public static final int hello_world=0x7f060002;
-        public static final int mainmenu_about=0x7f060008;
+        public static final int mainmenu_acerca=0x7f060007;
         public static final int mainmenu_configure=0x7f060005;
+        public static final int mainmenu_menu_acercade=0x7f060009;
+        public static final int mainmenu_menu_configuracion=0x7f060008;
         public static final int mainmenu_playbutton=0x7f060003;
-        public static final int mainmenu_puntuaciones=0x7f060007;
+        public static final int mainmenu_puntuaciones=0x7f060006;
         public static final int mainmenu_title=0x7f060004;
         public static final int menu_settings=0x7f060001;
-        public static final int puntuaciones_title=0x7f060009;
-        public static final int puntuaciones_vacio=0x7f06000a;
+        public static final int puntuaciones_texto=0x7f06000c;
+        public static final int puntuaciones_title=0x7f06000a;
+        public static final int puntuaciones_vacio=0x7f06000b;
+        public static final int relleno=0x7f06000d;
     }
     public static final class style {
         /** 

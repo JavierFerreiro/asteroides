@@ -4,13 +4,21 @@
     <string name="app_name">Asteroides</string>
     <string name="menu_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    
     <string name="mainmenu_playbutton">Jugar</string>
     <string name="mainmenu_title">Asteroides</string>
     <string name="mainmenu_configure">Configurar</string>
-    <string name="about">Acerca De</string>
     <string name="mainmenu_puntuaciones">Puntuaciones</string>
-    <string name="mainmenu_about">Acerca De</string>
+    <string name="mainmenu_acerca">Acerca De</string>
+    <string name="mainmenu_menu_configuracion">Configuración</string>
+    <string name="mainmenu_menu_acercade">Acerca De</string>
+    
+ 
     <string name="puntuaciones_title">Puntuaciones</string>
     <string name="puntuaciones_vacio">No Hay Puntuaciones</string>
+    <string name="puntuaciones_texto">Este programa ha sido desarrollado como ejemplo en el curso de Android para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
+    
+    
+    <string name="relleno">Foo Bar Lore Ipsilum.</string>
 
 </resources>

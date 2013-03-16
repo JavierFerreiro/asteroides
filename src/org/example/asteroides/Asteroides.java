@@ -12,7 +12,7 @@ import android.widget.Button;
 
 public class Asteroides extends Activity {
 	private Button bAcercaDe;
-	private Button bSalir;
+//	private Button bSalir; Comentamos este trozo para hacerlo por xml
 	public static AlmacenPuntuaciones almacen=new AlmacenPuntuacionesArray();
 	
     @Override
