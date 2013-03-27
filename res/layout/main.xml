@@ -21,10 +21,11 @@
 
     <Button
         android:id="@+id/button1"
+        style="@style/TextoAsteroides.Botones"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/mainmenu_playbutton" 
-        style="@style/TextoAsteroides.Botones"/>
+        android:onClick="lanzarJuego"
+        android:text="@string/mainmenu_playbutton" />
 
     <Button
         android:id="@+id/button2"

@@ -37,6 +37,10 @@
             android:label="Puntuaciones"
             android:theme="@android:style/Theme.Black">
         </activity>
+        <activity android:name=".Juego"
+            android:label="Juego"
+            android:theme="@android:style/Theme.Black">
+        </activity>
     </application>
 
 </manifest>
