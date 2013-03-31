@@ -39,7 +39,7 @@
         </activity>
         <activity android:name=".Juego"
             android:label="Juego"
-            android:theme="@android:style/Theme.Black">
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="landscape">
         </activity>
     </application>
 
