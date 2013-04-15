@@ -15,15 +15,20 @@ public class Juego extends Activity{
 	@Override protected void onPause() {
 		   super.onPause();
 		   vistaJuego.getThread().pausar();
+		   vistaJuego.OffSensors();
 		}
 		 
 		@Override protected void onResume() {
 		   super.onResume();
 		   vistaJuego.getThread().reanudar();
+		   vistaJuego.OnSensors();
 		}
 		 
 		@Override protected void onDestroy() {
-		   vistaJuego.getThread().detener();
 		   super.onDestroy();
+		   vistaJuego.getThread().detener();
+		   vistaJuego.OffSensors();
+		   
+		   
 		}
 }

@@ -2,6 +2,7 @@ package org.example.asteroides;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -12,6 +13,7 @@ import android.widget.Button;
 
 public class Asteroides extends Activity {
 	private Button bAcercaDe;
+	private MediaPlayer mp;
 	
 //	private Button bSalir; Comentamos este trozo para hacerlo por xml
 	public static AlmacenPuntuaciones almacen=new AlmacenPuntuacionesArray();
@@ -27,6 +29,8 @@ public class Asteroides extends Activity {
         		lanzarAcercaDe(null);
         	}
         });
+        
+        mp = MediaPlayer.create(this, R.raw.audio);
         
         //bAcercaDe.setBackgroundResource(R.drawable.degradado);
         /*Comentamos este trozo para hacerlo por xml
@@ -84,5 +88,27 @@ public class Asteroides extends Activity {
     	}
     	return true;
     }	
+    
+    @Override protected void onResume(){
+    	super.onResume();
+    	mp.start();
+    }
+    
+    @Override protected void onPause(){
+    	super.onPause();
+    	mp.start();
+    }
+    
+    @Override protected void onStop(){
+    	super.onStop();
+    	mp.stop();
+    }
+    
+    @Override protected void onDestroy(){
+    	super.onDestroy();
+    	mp.stop();
+    }
+    
+    
     
 }

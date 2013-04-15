@@ -49,6 +49,10 @@ public class VistaJuego extends View implements SensorEventListener{
     private boolean misilActivo = false;
     private int tiempoMisil;
     
+    //Sensores (By xavi)
+    private Sensor orientationSensor;
+    private SensorManager mSensorManager;
+    
     public VistaJuego(Context context, AttributeSet attrs) {
     	super(context, attrs);
     	
@@ -78,15 +82,14 @@ public class VistaJuego extends View implements SensorEventListener{
           }
        
        //Registro del sensor
-        SensorManager mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
+         mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
         List<Sensor> listSensors = mSensorManager.getSensorList( 
                       Sensor.TYPE_ORIENTATION);
+       
         if (!listSensors.isEmpty()) {
            Sensor orientationSensor = listSensors.get(0);
-           mSensorManager.registerListener(this, orientationSensor,
-                                      SensorManager.SENSOR_DELAY_GAME);
+           //mSensorManager.registerListener(this, orientationSensor,SensorManager.SENSOR_DELAY_GAME);
         }
-        
         
     }
 
@@ -279,4 +282,15 @@ public class VistaJuego extends View implements SensorEventListener{
 	public ThreadJuego getThread() {
 		return thread;
 	}
+
+
+	public void OffSensors() {
+		mSensorManager.unregisterListener(this);
+	}
+	
+	public void OnSensors() {
+		//Registro del sensor
+           mSensorManager.registerListener(this, orientationSensor,SensorManager.SENSOR_DELAY_GAME);
+	}
+
 }
