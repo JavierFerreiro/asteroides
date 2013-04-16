@@ -109,6 +109,22 @@ public class Asteroides extends Activity {
     	mp.stop();
     }
     
-    
+    @Override
+    protected void onSaveInstanceState(Bundle estadoGuardado){
+           super.onSaveInstanceState(estadoGuardado);
+           if (mp != null) {
+                  int pos = mp.getCurrentPosition();
+                  estadoGuardado.putInt("posicion", pos);
+           }
+    }
+  
+    @Override
+    protected void onRestoreInstanceState(Bundle estadoGuardado){
+           super.onRestoreInstanceState(estadoGuardado);
+           if (estadoGuardado != null && mp != null) {
+                  int pos = estadoGuardado.getInt("posicion");
+                  mp.seekTo(pos);
+           }
+    }
     
 }

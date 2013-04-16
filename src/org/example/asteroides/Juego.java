@@ -28,7 +28,6 @@ public class Juego extends Activity{
 		   super.onDestroy();
 		   vistaJuego.getThread().detener();
 		   vistaJuego.OffSensors();
-		   
-		   
 		}
+	
 }
