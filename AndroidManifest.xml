@@ -18,6 +18,7 @@
         <activity
             android:name="org.example.asteroides.Asteroides"
             android:label="@string/app_name" 
+            android:launchMode="singleTask"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

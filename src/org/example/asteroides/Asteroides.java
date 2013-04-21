@@ -1,5 +1,7 @@
 package org.example.asteroides;
 
+
+
 import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -30,7 +32,8 @@ public class Asteroides extends Activity {
         	}
         });
         
-        mp = MediaPlayer.create(this, R.raw.audio);
+        startService(new Intent(Asteroides.this, ServicioMusica.class));
+       // mp = MediaPlayer.create(this, R.raw.audio);
         
         //bAcercaDe.setBackgroundResource(R.drawable.degradado);
         /*Comentamos este trozo para hacerlo por xml
@@ -96,17 +99,18 @@ public class Asteroides extends Activity {
     
     @Override protected void onPause(){
     	super.onPause();
-    	mp.start();
+    	//mp.start();
     }
     
     @Override protected void onStop(){
     	super.onStop();
-    	mp.stop();
+    	//mp.stop();
     }
     
     @Override protected void onDestroy(){
     	super.onDestroy();
-    	mp.stop();
+    	//mp.stop();
+    	stopService(new Intent(Asteroides.this,ServicioMusica.class));
     }
     
     @Override
